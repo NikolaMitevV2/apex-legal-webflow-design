@@ -29,10 +29,10 @@ const FeaturesSection = () => {
     <section className="py-20 px-4 bg-gradient-to-b from-background to-secondary/30">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 scroll-reveal">
-          <h2 className="text-4xl md:text-5xl font-libre font-bold mb-6 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-lato font-bold mb-6 tracking-tight text-foreground">
             Why Choose <span className="text-primary">Apex Legal</span>
           </h2>
-          <p className="text-lg text-body max-w-3xl mx-auto font-lato font-light">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto font-lato font-light">
             Our commitment to excellence sets us apart in the legal industry.
           </p>
         </div>
@@ -43,10 +43,10 @@ const FeaturesSection = () => {
               <div className="w-16 h-16 mx-auto mb-4 bg-primary/20 rounded-full flex items-center justify-center">
                 <i className={`${feature.icon} text-2xl text-primary`}></i>
               </div>
-              <h3 className="text-xl font-libre font-bold mb-3 tracking-tight">
+              <h3 className="text-xl font-lato font-bold mb-3 tracking-tight text-foreground">
                 {feature.title}
               </h3>
-              <p className="text-body font-lato font-light text-sm leading-relaxed">
+              <p className="text-muted-foreground font-lato font-light text-sm leading-relaxed">
                 {feature.description}
               </p>
             </div>
