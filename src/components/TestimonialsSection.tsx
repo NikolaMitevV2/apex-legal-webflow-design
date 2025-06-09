@@ -48,7 +48,7 @@ const TestimonialsSection = () => {
     <section id="testimonials" className="py-20 px-4 bg-gradient-to-b from-background to-secondary/20">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 scroll-reveal">
-          <h2 className="text-4xl md:text-5xl font-libre font-bold mb-6 tracking-tight">
+          <h2 className="text-4xl md:text-5xl  font-bold mb-6 tracking-tight">
             Client <span className="text-primary">Success Stories</span>
           </h2>
           <p className="text-lg text-body max-w-3xl mx-auto font-lato font-light">

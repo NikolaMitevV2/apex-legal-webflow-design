@@ -1,9 +1,11 @@
-
-import React from 'react';
+import React from "react";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="min-h-screen flex flex-col items-start justify-center relative overflow-hidden bg-background">
+    <section
+      id="home"
+      className="min-h-screen flex flex-col items-start justify-center relative overflow-hidden bg-background"
+    >
       {/* Hero Content */}
       <div className="relative z-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="max-w-4xl">
@@ -17,9 +19,9 @@ const HeroSection = () => {
             <br />
             improvement of obsolete industry standards.
           </p>
-          
-          <button className="premium-btn px-8 py-4 text-foreground font-lato font-medium transition-all duration-300">
-            <a href="#contact" className="flex items-center space-x-3">
+
+          <button className="rounded-full premium-btn px-8 py-4 text-foreground font-lato font-medium transition-all duration-300">
+            <a href="/contact" className="flex items-center space-x-3">
               <span>Get Legal Consultation</span>
               <i className="ph-light ph-arrow-right"></i>
             </a>

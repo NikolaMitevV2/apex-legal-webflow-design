@@ -1,46 +1,54 @@
-
-import React, { useState } from 'react';
-import { Building2, Home, Calculator, Users } from 'lucide-react';
+import React, { useState } from "react";
+import { Building2, Home, Calculator, Users } from "lucide-react";
 
 const ServicesSection = () => {
   const [activeService, setActiveService] = useState(0);
 
   const services = [
     {
-      title: 'Corporate & M&A',
+      title: "Corporate & M&A",
       icon: Building2,
-      description: 'Expert guidance through complex corporate transactions, mergers, and acquisitions. Our team provides strategic counsel to ensure successful business combinations and corporate restructuring.',
-      details: 'We handle everything from due diligence to post-merger integration, ensuring compliance with all regulatory requirements while maximizing value for our clients.'
+      description:
+        "Expert guidance through complex corporate transactions, mergers, and acquisitions. Our team provides strategic counsel to ensure successful business combinations and corporate restructuring.",
+      details:
+        "We handle everything from due diligence to post-merger integration, ensuring compliance with all regulatory requirements while maximizing value for our clients.",
     },
     {
-      title: 'Real Estate Law',
+      title: "Real Estate Law",
       icon: Home,
-      description: 'Comprehensive real estate legal services covering commercial and residential transactions, development projects, and property disputes.',
-      details: 'From contract negotiation to closing, we protect your interests in all real estate matters, including zoning issues, environmental compliance, and investment strategies.'
+      description:
+        "Comprehensive real estate legal services covering commercial and residential transactions, development projects, and property disputes.",
+      details:
+        "From contract negotiation to closing, we protect your interests in all real estate matters, including zoning issues, environmental compliance, and investment strategies.",
     },
     {
-      title: 'Tax Law',
+      title: "Tax Law",
       icon: Calculator,
-      description: 'Strategic tax planning and compliance services to minimize liability while ensuring full regulatory compliance for individuals and businesses.',
-      details: 'Our tax attorneys work closely with your financial advisors to develop comprehensive strategies that protect your assets and optimize your tax position.'
+      description:
+        "Strategic tax planning and compliance services to minimize liability while ensuring full regulatory compliance for individuals and businesses.",
+      details:
+        "Our tax attorneys work closely with your financial advisors to develop comprehensive strategies that protect your assets and optimize your tax position.",
     },
     {
-      title: 'Other Specialties',
+      title: "Other Specialties",
       icon: Users,
-      description: 'Additional legal services including employment law, intellectual property protection, and regulatory compliance across various industries.',
-      details: 'We offer specialized expertise in emerging areas of law, providing innovative solutions for complex legal challenges in the modern business environment.'
-    }
+      description:
+        "Additional legal services including employment law, intellectual property protection, and regulatory compliance across various industries.",
+      details:
+        "We offer specialized expertise in emerging areas of law, providing innovative solutions for complex legal challenges in the modern business environment.",
+    },
   ];
 
   return (
     <section id="services" className="py-20 px-4 bg-background">
       <div className="max-w-7xl mx-auto">
-        <div className="mb-16 scroll-reveal">
+        <div className="mb-16 scroll-reveal flex flex-col items-center text-center">
           <h2 className="text-5xl md:text-6xl font-lato font-bold mb-6 tracking-tight text-foreground">
             AREAS OF <span className="text-primary">EXPERTISE</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl font-lato font-light leading-relaxed">
-            Our specialized legal services are designed to meet the complex needs of modern businesses and individuals.
+            Our specialized legal services are designed to meet the complex
+            needs of modern businesses and individuals.
           </p>
         </div>
 
@@ -53,9 +61,9 @@ const ServicesSection = () => {
                 <div
                   key={index}
                   className={`glass-card p-6 rounded-lg cursor-pointer transition-all duration-300 flex items-start space-x-4 ${
-                    activeService === index 
-                      ? 'bg-primary/10 border-primary/30' 
-                      : 'hover:bg-white/5'
+                    activeService === index
+                      ? "bg-primary/10 border-primary/30"
+                      : "hover:bg-white/5"
                   }`}
                   onClick={() => setActiveService(index)}
                 >
@@ -79,8 +87,8 @@ const ServicesSection = () => {
           <div className="scroll-reveal">
             <div className="glass-card p-8 rounded-xl">
               <div className="flex items-center space-x-4 mb-6">
-                {React.createElement(services[activeService].icon, { 
-                  className: "w-8 h-8 text-primary" 
+                {React.createElement(services[activeService].icon, {
+                  className: "w-8 h-8 text-primary",
                 })}
                 <h3 className="text-2xl font-lato font-bold text-primary tracking-tight">
                   {services[activeService].title}
@@ -92,8 +100,11 @@ const ServicesSection = () => {
               <p className="text-muted-foreground font-lato font-light leading-relaxed mb-8">
                 {services[activeService].details}
               </p>
-              <button className="premium-btn px-6 py-3 text-foreground font-lato font-medium transition-all duration-300">
-                Learn More
+              <button className="rounded-full premium-btn px-8 py-4 text-foreground font-lato font-medium transition-all duration-300">
+                <a href="/contact" className="flex items-center space-x-3">
+                  <span>Learn More</span>
+                  <i className="ph-light ph-arrow-right"></i>
+                </a>
               </button>
             </div>
           </div>
